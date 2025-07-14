@@ -1,6 +1,7 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 // Base URL for API calls
+//export const API_BASE_URL = "http://35.160.76.71:8080";
 export const API_BASE_URL = "http://localhost:8080";
 
 const getAuthHeader = () => {
@@ -19,7 +20,7 @@ export const GET = async <T>(
   config?: AxiosRequestConfig
 ): Promise<T> => {
   try {
-    const headers =getAuthHeader(); 
+    const headers = getAuthHeader();
     const response: AxiosResponse<T> = await axios.get(
       `${API_BASE_URL}${url}`,
       {
