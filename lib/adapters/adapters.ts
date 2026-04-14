@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 // Base URL for API calls
 //export const API_BASE_URL = "http://35.160.76.71:8080";
-export const API_BASE_URL = "http://localhost:8080";
+export const API_BASE_URL = "https://flexfield-backend.onrender.com";
 
 const getAuthHeader = () => {
   const token = localStorage.getItem("token");
